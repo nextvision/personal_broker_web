@@ -1,0 +1,63 @@
+{
+	"row": [{
+		"src": "lotes",
+		"sub": "Lotes",
+		"exibir": true
+	}, {
+		"src": "portaria",
+		"sub": "Entrada condomínio",
+		"exibir": true
+	},{
+		"src": "quiosque",
+		"sub": "Quiosque",
+		"exibir": true
+	}, {
+		"src": "academia_interna",
+		"sub": "Academia",
+		"exibir": true
+	}, {
+		"src": "academia_externa",
+		"sub": "Academia área externa",
+		"exibir": false
+	}, {
+		"src": "piscina",
+		"sub": "Piscinas",
+		"exibir": true
+	}, {
+		"src": "pergolado",
+		"sub": "Pergolado",
+		"exibir": false
+	}, {
+		"src": "piscina_aerea",
+		"sub": "Piscina (aérea)",
+		"exibir": false
+	}, {
+		"src": "piscina_cadeira",
+		"sub": "Piscina",
+		"exibir": false
+	}, {
+		"src": "quadra_peteca",
+		"sub": "Quadras Esportivas",
+		"exibir": true
+	}, {
+		"src": "quadra_poliesportiva",
+		"sub": "Quadra Poliesportiva",
+		"exibir": false
+	},{
+		"src": "society",
+		"sub": "Campo society",
+		"exibir": false
+	}, {
+		"src": "tenis",
+		"sub": "Quadra de tênis",
+		"exibir": false
+	}, {
+		"src": "salao_de_festas_interna",
+		"sub": "Salão de festas",
+		"exibir": true
+	}, {
+		"src": "salao_festas_externa",
+		"sub": "Salão de festas área externa",
+		"exibir": false
+	} ]
+}

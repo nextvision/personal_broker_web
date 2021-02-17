@@ -1,0 +1,41 @@
+.tour{
+	position: absolute;
+	width: 100%;
+	/* z-index: 5000; */
+	height: 500px;
+}
+
+.tour-menu{
+    height: 530px;
+}
+
+.titulo-360 {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 10px 50px;
+}
+
+.text-360 {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px 50px;
+    text-transform: uppercase !important;
+}
+
+.botao-360 {
+    background-color: #d2ac67;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    margin: 12px;
+}
+
+.btn-360 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #162e5e;
+}
