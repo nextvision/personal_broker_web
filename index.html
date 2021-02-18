@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BizLand Bootstrap Template - Index</title>
+  <title>Aliança</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -20,6 +20,7 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-slider.min.css">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -161,7 +162,7 @@
   </section>
   <!-- End Galeria -->
 
- 
+
 
   <!-- ======= Hero Section ======= -->
   <!-- <section id="hero" class="d-flex align-items-center">
@@ -179,17 +180,25 @@
 
   <main id="main">
 
-     <!-- ======= Tour 360 Section ======= -->
+    <!-- ======= Tour 360 Section ======= -->
     <section id="tour">
-      <div class="container-fluid tour-menu">
+      <div class="container-fluid tour-menu" data-aos="fade-up">
         <div class="row">
           <div class="col-9">
             <div id="pano-tour1" class="tour">
               <h1>tour 1</h1>
-              <noscript><table style="width:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
-                    <script>
-                        embedpano({swf:"assets/vtour/tour.swf", xml:"assets/vtour/tour.xml", target:"pano-tour1", html5:"only", mobilescale:1.0, passQueryParameters:true});
-                    </script>
+              <noscript>
+                <table style="width:100%;">
+                  <tr style="vertical-align:middle;">
+                    <td>
+                      <div style="text-align:center;">ERROR:<br /><br />Javascript not activated<br /><br /></div>
+                    </td>
+                  </tr>
+                </table>
+              </noscript>
+              <script>
+                embedpano({ swf: "assets/vtour/tour.swf", xml: "assets/vtour/tour.xml", target: "pano-tour1", html5: "only", mobilescale: 1.0, passQueryParameters: true });
+              </script>
             </div>
 
             <div id="pano-tour2" class="tour">
@@ -256,8 +265,177 @@
     </section>
     <!-- End Tour 360 -->
 
+    <!-- ======= Simulador Financiamento Section ======= -->
+    <section id="financiamento">
+      <div class="container" data-aos="fade-up">
+        <div class="row d-flex align-items-center">
+
+          <div class="col-5">
+            <div>
+              <div class="titulo-tab-financiamento">SIMULE UM FINANCIAMENTO</div>
+              <div class="text-tab-financiamento">
+                quanto custa realizar o sonho de morar em um condominio completo e com infraestrutura diferenciada?
+                <b>escolha o quanto quer fianciar e de que maneira.</b>
+              </div>
+              <div class="container-fluid">
+                <div class="row d-flex flex-column">
+                  <div class="text-tab-financiamento-simulador">
+                    <div>1. Qual valor deseja financiar?</div>
+                  </div>
+                  <div class="">
+                    <input id="valor_financiamento" type="text" style="width:100%; margin-top: 8px;" />
+                  </div>
+                  <div class="">
+                    <input type="text" id="numpad_valor_financiamento" class="input-transparent" />
+                  </div>
+                </div>
+
+                <div class="row d-flex flex-column" style="margin-top:16px;">
+                  <div class="text-tab-financiamento-simulador">
+                    <div>2. Em quantos anos?</div>
+                  </div>
+                  <div class="">
+                    <input id="tempo_financiamento" type="text" style="width:100%; margin-top: 8px;" />
+                  </div>
+                  <div class="">
+                    <input type="text" id="numpad_tempo_financiamento" class="input-transparent" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-1 d-flex justify-content-center">
+            <div style="border-left: 2px solid #000000;
+              height: 440px;"></div>
+          </div>
+          <div class="col-6">
+
+            <div class="financiamento-result">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="sub-titulo-tab-financiamento">Valor Financiado</div>
+                      <input type="text" class="finan_valor_financiado input-transparent money">
+                    </div>
+                    <div class="col-6">
+                      <div class="sub-titulo-tab-financiamento">Taxa</div>
+                      <input type="text" class="finan_taxa_juros input-transparent">
+                      <!--span class="finan_taxa_juros"></span-->
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="sub-titulo-tab-financiamento">Primeira Parcela</div>
+                      <input type="text" class="finan_primeira_parcela input-transparent money">
+                    </div>
+                    <div class="col-6">
+                      <div class="sub-titulo-tab-financiamento">Última Parcela</div>
+                      <input type="text" class="finan_ultima_parcela input-transparent money">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div style="width: 410px; margin-top: 45px;">
+                      <div>* Este recurso é apenas uma simulação. O financiamento esta sujeito às regras da entidade
+                        bancária.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- -->
+          </div>
+
+          <div class="col-1"></div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Simulador Financiamento Section  -->
+
+    <!-- ======= Investimento Section ======= -->
+    <section id="investir">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-6 row">
+            <div class="col-5">
+              <div class="titulo-tab-investimento pb-4">as vantagens de investir</div>
+              <div class="pb-4"><img src="assets/vendor/ico/icon_money.png" alt="" class="d-block"></div>
+              <div class="text-tab-investimento">
+                Empreendimento para famílias com <b>renda familiar acima de R$4.900,00</b>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="row mb-3">
+                <div class="col-5 display-2">51%</div>
+                <div class="col-7 d-flex align-items-center">da população possui renda maior que R$4.900,00 (mais de
+                  800.000 pessoas em Goiânia e Senador Canedo)</div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5 display-2">24%</div>
+                <div class="col-7 d-flex align-items-center">dessas famílias (57.000) tem interesse em adquirir imóveis
+                  nos próximos dois anos</div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5 display-2">60%</div>
+                <div class="col-7 d-flex align-items-center">destas famílias interessadas em adquirir terreno em um
+                  condomínio fechado como o Entre Lagos</div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-5 display-2" style="right: 64px;">277<sup style="font-size: 50%; top: -2.5rem;">M2</sup>
+                </div>
+                <div class="col-7 d-flex align-items-center">tamanho médio dos terrenos desejados</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1 d-flex justify-content-center">
+            <div style="border-left: 2px solid #000000; height: 440px;"></div>
+          </div>
+          <div class="col-5 row">
+            <div class="col-6">
+              <div style="width: 80%;">
+                <div><img src="assets/vendor/ico/icon_localizacao.png" alt="" class="img-tab-investimento d-block mx-auto"></div>
+                <div style="background-color: #d2ac67; padding: 45px;">
+                  <p><b>Localização valorizada</b></p>
+                  <p>Beleza e vasta área verde</p>
+                  <p><b>Região alta</b></p>
+                  <p>Fácil acesso</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <div style="width: 95%; letter-spacing: 1.5px;">
+                <div class="sub-titulo-tab-investimento">Conceito</div>
+                <div class="mb-4">atende a todas as necessidades</div>
+
+                <div class="sub-titulo-tab-investimento">Segurança</div>
+                <div class="mb-4">portaria 24h, controle de acesso</div>
+
+                <div class="sub-titulo-tab-investimento">Lazer</div>
+                <div class="mb-4">piscina, academia, quadras de esporte</div>
+
+                <div class="sub-titulo-tab-investimento">Mall</div>
+                <div class="mb-4">mercado, padaria, conveniência</div>
+
+                <div class="sub-titulo-tab-investimento">Localização próxima</div>
+                <div class="mb-4">centros das cidades, UPA, centros comerciais, supermercados, saída de Goiânia</div>
+
+                <div class="sub-titulo-tab-investimento">Lotes</div>
+                <div class="mb-4">250 m², 300 m², 350 m² e 400 m²</div>
+              </div>
+            </div>
+            <!-- <small>Fonte: Pesquisa Sucessometria datastore</small> -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Investimento Section -->
+
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
+    <!-- <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -296,10 +474,10 @@
         </div>
 
       </div>
-    </section><!-- End Featured Services Section -->
+    </section>End Featured Services Section -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
+    <!-- <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -347,10 +525,11 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section> -->
+    <!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
+    <!-- <section id="skills" class="skills">
       <div class="container" data-aos="fade-up">
 
         <div class="row skills-content">
@@ -414,10 +593,11 @@
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+    </section> -->
+    <!-- End Skills Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <!-- <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -457,10 +637,11 @@
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section> -->
+    <!-- End Counts Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    <!-- <section id="clients" class="clients section-bg">
       <div class="container" data-aos="zoom-in">
 
         <div class="row">
@@ -492,10 +673,11 @@
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section> -->
+    <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -559,10 +741,11 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- <section id="testimonials" class="testimonials">
       <div class="container" data-aos="zoom-in">
 
         <div class="owl-carousel testimonials-carousel">
@@ -630,10 +813,11 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -758,10 +942,11 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> -->
+    <!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <!-- <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -848,10 +1033,11 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> -->
+    <!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -935,10 +1121,11 @@
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section> -->
+    <!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    <!-- <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -1025,10 +1212,11 @@
         </ul>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section> -->
+    <!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -1109,7 +1297,8 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -1203,6 +1392,7 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap-slider.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
