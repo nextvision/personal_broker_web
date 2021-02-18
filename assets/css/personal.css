@@ -39,3 +39,16 @@
     font-weight: bold;
     color: #162e5e;
 }
+
+@media (max-width: 1024px) {
+    .titulo-360{
+        font-size: 0.8rem;
+    }
+    .text-360{
+        font-size:0.7rem;
+    }
+    .botao-360{
+        width: 80px;
+        height: 80px;
+    }
+  }
