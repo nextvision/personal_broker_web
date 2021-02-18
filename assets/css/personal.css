@@ -56,7 +56,6 @@
   /* como investir*/
 #investir .container {
     max-width: 1658px;
-    padding-top: 120px;
 }
 
 .img-tab-investimento {
@@ -92,6 +91,49 @@
     font-size: 18px;
     text-transform: uppercase;
     color: #67a0db;
+}
+
+#investir sup {
+    top: -2.5rem !important;
+    font-size: 50% !important;
+}
+
+.investir-nub-porcento {
+    right: 50px;
+}
+
+.investir-box-localizacao {
+    background-color: #d2ac67;
+    padding: 45px;
+}
+
+
+@media(max-width: 1366px){
+    #investir .container {
+        max-width: 1200px;
+    }
+    .col-5.display-2 {
+        font-size: 4rem;
+    }
+    #investir .col-7.d-flex.align-items-center {
+        font-size: 0.8rem
+    }
+    #investir sup {
+        top: -1.5rem !important;
+        font-size: 50% !important;
+    }
+    .investir-nub-porcento {
+    right: 30px !important;
+    }
+    .investir-box-localizacao {
+        padding: 30px !important;
+    }
+    .sub-titulo-tab-investimento{
+        font-size: 15px
+    }
+    #investir .mb-4 {
+        font-size: .8rem
+    }
 }
 
 /* End como investir*/
@@ -162,4 +204,9 @@
     padding: 5px 0px 30px;
 }
 /*.money{width:100%; text-align:left;}*/
+@media(max-width: 1366px){
+    #financiamento .container {
+        max-width: 1200px;
+    }
+}
 /* End FINANCIAMENTO*/
