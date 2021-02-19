@@ -210,3 +210,35 @@
     }
 }
 /* End FINANCIAMENTO*/
+
+/*INSTITUCIONAL*/
+
+.img-tab-institucional {
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+#tab-institucional .container {
+    margin-top: 300px !important;
+    max-width: 1500px;
+}
+
+.text-tab-institucional-left {
+    padding: 0px 100px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.titulo-tab-institucional-right {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #659ad2;
+}
+
+.text-tab-institucional-right {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* End INSTITUCIONAL*/
