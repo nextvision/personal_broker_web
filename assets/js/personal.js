@@ -121,4 +121,11 @@ $(function () {
 
     $('.money').mask('R$ 000.000.000.000.000,00');
     /* ======= End Financiamento ======= */
+
 })
+
+angular.module('galeryApp', []).controller('personCtrl', function($scope, $http) {
+    $http.get("assets/image-gallery/images.json").then(function (response) {
+        $scope.galeryData = response.data.row;
+    });
+});
