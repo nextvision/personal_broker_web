@@ -20,12 +20,12 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-slider.min.css">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap-slider.min.css" rel="stylesheet">
 
   <!-- krpano -->
   <script src="assets/vtour/tour.js"></script>
@@ -73,37 +73,38 @@
         <ul>
           <li class="active">
             <a href="#galeria">
-              <img src="/assets/vendor/ico/icon_galeria_white.png" alt="">
+              <img src="assets/vendor/ico/icon_galeria_white.png" alt="">
               <div>imagens do<br>empreendimento</div>
             </a>
           </li>
           <li>
-            <a href="#tour">
-              <img src="/assets/vendor/ico/icon_tour360_white.png" alt="">
+            <a>
+            <!-- <a href="#tour"> -->
+              <img src="assets/vendor/ico/icon_tour360_white.png" alt="">
               <div>tour virtual<br>panorâmico</div>
             </a>
           </li>
           <li>
             <a href="#financiamento">
-              <img src="/assets/vendor/ico/icon_financiamento_white.png" alt="">
+              <img src="assets/vendor/ico/icon_financiamento_white.png" alt="">
               <div>simule um<br>financiamento</div>
             </a>
           </li>
           <li>
             <a href="#investir">
-              <img src="/assets/vendor/ico/icon_investimento_white.png" alt="">
+              <img src="assets/vendor/ico/icon_investimento_white.png" alt="">
               <div>as vantagens<br>de investir</div>
             </a>
           </li>
           <li>
             <a href="#idealizacao">
-              <img src="/assets/vendor/ico/icon_idealizacao_white.png" alt="">
+              <img src="assets/vendor/ico/icon_idealizacao_white.png" alt="">
               <div>idealização</div>
             </a>
           </li>
           <li>
             <a href="#contato">
-              <img src="/assets/vendor/ico/icon_contato_white.png" alt="">
+              <img src="assets/vendor/ico/icon_contato_white.png" alt="">
               <div>mantenha<br>contato</div>
             </a>
           </li>
@@ -143,7 +144,7 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item" ng-class="{active: ($index === 0)}" ng-repeat="x in galeryData">
-            <img class="d-block w-100" ng-src= "{{ '/assets/image-gallery/'+x.src+'.jpg' }}" alt="First slide">
+            <img class="d-block w-100" ng-src= "{{ 'assets/image-gallery/'+x.src+'.jpg' }}" alt="First slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -178,7 +179,7 @@
   <main id="main">
 
     <!-- ======= Tour 360 Section ======= -->
-    <section id="tour">
+    <section id="tour" class="d-none">
       <div class="container-fluid tour-menu" data-aos="fade-up">
         <div class="row">
           <div class="col-9">
