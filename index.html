@@ -103,7 +103,7 @@
             </a>
           </li>
           <li>
-            <a href="#contato">
+            <a href="#cadastro">
               <img src="assets/vendor/ico/icon_contato_white.png" alt="">
               <div>mantenha<br>contato</div>
             </a>
@@ -464,6 +464,66 @@
     </section>
 
     <!-- End Idealização Sectioin  -->
+
+    <!-- ======= Cadastro Section ======= -->
+    <section id="cadastro">
+      <div class="container">
+        <div class="row">
+          <div class="w-100">
+            <div class="titulo-cadastro">mantenha contato</div>
+            <div class="text-cadastro">Preencha seus dados abaixo</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mx-auto">
+      
+            <form id="cadastroForm" class="d-flex flex-column justify-content-center was-validated" novalidate>
+      
+              <div class="form-group row justify-content-center">
+                <input type="text" class="form-control use-keyboard-input" id="usr" name="username" placeholder="Nome"
+                  required>
+              </div>
+      
+              <div class="form-group row justify-content-center">
+                <input type="email" class="use-keyboard-input form-control" id="email" name="email" placeholder="E-mail"
+                  required>
+              </div>
+      
+              <div class="form-group row justify-content-center">
+                <input type="text" class="use-keyboard-input form-control" id="telefone1" name="phone1"
+                  placeholder="(99)999999999" required>
+              </div>
+      
+              <div class="form-group row justify-content-center">
+                <input type="text" class="use-keyboard-input form-control" id="telefone2" name="phone2"
+                  placeholder="(99)999999999" required>
+              </div>
+      
+              <div class="custom-control custom-checkbox align-self-center mb-3">
+      
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+      
+                <label class="custom-control-label" for="customControlValidation1">
+                  Concordo em receber mensagens sobre este empreendimento.
+                </label>
+      
+                <div class="invalid-feedback">
+                  <input id="button-cadastra" class="btn disabled" type="button" value="Enviar">
+                </div>
+      
+                <div class="valid-feedback">
+                  <input id="button-cadastra" class="btn" type="button" value="Enviar" onclick="cadastrese()">
+                </div>
+      
+              </div>
+      
+            </form>
+            <div id="feedback" class="mt-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End cadastro  -->
 
   </main><!-- End #main -->
 

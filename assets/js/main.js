@@ -217,3 +217,59 @@
   });
 
 })(jQuery);
+
+
+// analytics = function(e_event, e_category, e_label, e_value) {
+//   gtag('event', e_event, {
+//       'event_category': e_category,
+//       'event_label': e_label,
+//       'value': e_value
+//   })
+// }
+
+cadastrese = function() {
+  let urlAccess = "https://pds.nextvision.com.br"
+  console.log("urlAccess: "+ urlAccess)
+  let stb_id = "d897baed9a0e"
+  var customer_name   = $("#usr").val();
+  var customer_email  = $("#email").val();
+  var customer_phone1 = $("#telefone1").val();
+  var customer_phone2 = $("#telefone2").val();
+
+  var params = {'status_id':1, 'name': customer_name, 'email':customer_email, 'phone1': customer_phone1, 'phone2': customer_phone2};
+
+  $.post(urlAccess + '/app/api/v3/personal-broker/registers?stb_id=' + stb_id, params, function(data){
+
+      var code = data.code;
+      var msg = data.msg;
+      var msgtitle = data.msg.title;
+
+      if (msgtitle !== "Error") {
+          msgtitle = "Por favor digite seu";
+      } else {
+          msgtitle = " ";
+      }
+
+      var htmlFeedback = '<div class="invalidFeedback text-center">' + msgtitle + ' ' + msg.text + '</div>';
+  
+      if (code == 200) {
+  
+          $('.invalidFeedback.text-center').remove()
+          $("#form_menu3, .keyboard").css("display", "none");
+          $(".invalidFeedback .cas1").css({ "color": "#26d626", "font-size": "3rem", "position": "fixed", "left": "850px", "margin-top": "-385px" });
+          $(".invalidFeedback .cas2").css({ "color": "#4a1120", "font-size": "3rem", "position": "fixed", "left": "843px", "margin-top": "-300px" });
+          $('#cadastroForm .form-group input ').val("");
+
+      } else if (code == 404) {
+          $('.invalidFeedback.text-center').remove()
+          $("#feedback").append(htmlFeedback);
+          $(".invalidFeedback").css({ "margin-top": "0px", "font-size": "1.5rem", "color": "red" });
+  
+      }
+
+      // respeitar ordem dos eventos passados ex. analytics(e_event, e_category, e_label, e_value)
+      // analytics('email cadastrado', 'cadastro', 'site', '')
+
+  },'json');
+
+}
