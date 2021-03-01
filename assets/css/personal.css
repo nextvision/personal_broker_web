@@ -136,6 +136,30 @@
     }
 }
 
+@media(max-width: 1024px){
+    
+    .titulo-tab-investimento{
+        font-size: 1.5em;
+    }
+    .text-tab-investimento{
+        font-size: 1em;
+    }
+
+    #investir img {
+        height: 80px;
+    }
+    .col-5.display-2{
+        font-size: 3em;
+    }
+    .investir-box-localizacao{
+        padding: 18px 10px !important;
+    }
+    #investir .col-1.d-flex.justify-content-center div{
+        height: 541px !important;
+    }
+}
+
+
 /* End como investir*/
 
 /*FINANCIAMENTO*/
@@ -209,6 +233,29 @@
         max-width: 1200px;
     }
 }
+
+@media(max-width: 1024px){
+    .text-tab-financiamento {
+        font-size: 1em;
+        padding: 0px 50px;
+        text-align: justify;
+    }
+    .titulo-tab-financiamento {
+        font-size: 1.5em
+    }
+    .text-tab-financiamento-simulador{
+        padding: 10px 40px;
+        /* text-align: left; */
+    }
+
+    .slider.slider-horizontal {
+        margin-left: 20px;
+    }
+    .financiamento-result .container-fluid{
+        max-width: 93%;
+    }
+}
+
 /* End FINANCIAMENTO*/
 
 /*INSTITUCIONAL*/
@@ -239,6 +286,20 @@
     font-size: 20px;
     margin-bottom: 30px;
     text-align: justify;
+}
+
+@media(max-width: 1024px){
+    .text-tab-institucional-left {
+        padding: 19px 50px;
+        font-size: 1.2em;
+    }
+    .titulo-tab-institucional-right {
+        font-size:1.5em;
+    }
+    .text-tab-institucional-right{
+        font-size:1.2em;
+        margin-bottom: 15px;
+    }
 }
 
 /* End INSTITUCIONAL*/
