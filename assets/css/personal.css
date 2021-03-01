@@ -137,6 +137,10 @@
 }
 
 @media(max-width: 1024px){
+
+    #investir .container{
+        width: 965px !important;
+    }
     
     .titulo-tab-investimento{
         font-size: 1.5em;
@@ -156,6 +160,14 @@
     }
     #investir .col-1.d-flex.justify-content-center div{
         height: 541px !important;
+    }
+}
+@media(max-width: 768px){
+    #investir .container{
+        width: 730px !important;
+    }
+    #investir .col-lg-1.d-flex.justify-content-center{
+        display: none !important;
     }
 }
 
@@ -254,8 +266,19 @@
     .financiamento-result .container-fluid{
         max-width: 93%;
     }
+    #financiamento .slider.slider-horizontal{
+        width: 90% !important;
+    }
+    #numpad_valor_financiamento, #numpad_tempo_financiamento {
+        padding-right: 50px !important;
+    }
+    
 }
-
+@media(max-width: 768px){
+    #financiamento .col-lg-1.d-flex.justify-content-center{
+        display: none !important;
+    }
+}
 /* End FINANCIAMENTO*/
 
 /*INSTITUCIONAL*/
