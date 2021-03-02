@@ -109,9 +109,7 @@
 
 
 @media(max-width: 1366px){
-    #investir .container {
-        max-width: 1200px;
-    }
+    
     .col-lg-5.display-2 {
         font-size: 4rem;
     }
@@ -137,10 +135,6 @@
 }
 
 @media(max-width: 1024px){
-
-    #investir .container{
-        width: 965px !important;
-    }
     
     .titulo-tab-investimento{
         font-size: 1.5em;
@@ -168,9 +162,7 @@
     }
  }
 @media(max-width: 768px){
-    #investir .container{
-        width: 730px !important;
-    }
+
     #investir .col-lg-1.d-flex.justify-content-center{
         display: none !important;
     }
