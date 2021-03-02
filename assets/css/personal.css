@@ -109,7 +109,7 @@
 
 
 @media(max-width: 1366px){
-    
+
     .col-lg-5.display-2 {
         font-size: 4rem;
     }
@@ -412,6 +412,14 @@
 
 #cadastro .form-control {
     border-radius: 1.5rem !important;
+}
+
+form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #000 !important;
+}
+
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgb(95 93 93 / 25%) !important;
 }
 
 /*End CADASTRO*/
