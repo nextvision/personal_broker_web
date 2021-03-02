@@ -423,3 +423,11 @@
 }
 
 /*End CADASTRO*/
+
+/* Footer */
+@media(max-width: 768px){
+    #footer img {
+        max-height: 50px;
+    }
+}
+/* End Footer */
