@@ -421,7 +421,14 @@ form-control.is-invalid, .was-validated .form-control:invalid {
 .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
     box-shadow: 0 0 0 0.2rem rgb(95 93 93 / 25%) !important;
 }
-
+@media (max-width: 768px){
+    .titulo-cadastro {
+        font-size: 1em;
+    }
+    .text-cadastro{
+        font-size: 1em;
+    }
+}
 /*End CADASTRO*/
 
 /* Footer */
