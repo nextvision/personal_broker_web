@@ -230,7 +230,7 @@
 cadastrese = function() {
   let urlAccess = "https://pds.nextvision.com.br"
   console.log("urlAccess: "+ urlAccess)
-  let stb_id = "d897baed9a0e"
+  let stb_id = "aliancaWebApp"
   var customer_name   = $("#usr").val();
   var customer_email  = $("#email").val();
   var customer_phone1 = $("#telefone1").val();
@@ -238,7 +238,7 @@ cadastrese = function() {
 
   var params = {'status_id':1, 'name': customer_name, 'email':customer_email, 'phone1': customer_phone1, 'phone2': customer_phone2};
 
-  $.post(urlAccess + '/app/api/v3/personal-broker/registers?stb_id=' + stb_id, params, function(data){
+  $.post(urlAccess + '/app/api/v3/totem/registers?stb_id=' + stb_id, params, function(data){
 
       var code = data.code;
       var msg = data.msg;
