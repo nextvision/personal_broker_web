@@ -236,7 +236,7 @@ cadastrese = function() {
   var customer_phone1 = $("#telefone1").val();
   var customer_phone2 = $("#telefone2").val();
 
-  var params = {'status_id':1, 'name': customer_name, 'email':customer_email, 'phone1': customer_phone1, 'phone2': customer_phone2};
+  var params = {'source_id': 2, 'status_id':1, 'name': customer_name, 'email':customer_email, 'phone1': customer_phone1, 'phone2': customer_phone2};
 
   $.post(urlAccess + '/app/api/v3/totem/registers?stb_id=' + stb_id, params, function(data){
 
